@@ -128,6 +128,7 @@ export default function BookAppointmentPage() {
         dateOfBirth: '2000-01-01',
         gender: 'Not specified',
         address: 'Quick Registration',
+        isProfileCompleted: false,
       });
 
       setPatients(prev => [...prev, newPatient]);
