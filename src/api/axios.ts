@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-// Use the institutional LAN IP for the backend gateway
-export const API_BASE_URL = 'http://127.0.0.1:8080';
+// Use environment variable for production, fallback to local IP for development
+export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:8080';
 
 // Create axios instance
 const api = axios.create({
